@@ -1,0 +1,24 @@
+<ion-app>
+    <ion-split-pane>
+      <!--  our side menu  -->
+      <ion-menu>
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-buttons slot="end">
+                <ion-button (click)="menuClose()">
+                  <ion-icon slot="icon-only" name="close"></ion-icon>
+                </ion-button>
+            </ion-buttons> 
+            <ion-title  >Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      </ion-menu>
+    
+      <!-- the main content -->
+      <ion-nav #nav #content main>
+          <ion-router-outlet></ion-router-outlet>       
+      </ion-nav>
+    </ion-split-pane>
+
+</ion-app>
+<ion-menu-controller></ion-menu-controller>
